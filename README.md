@@ -1,6 +1,18 @@
 # LLM-->Pandocでの発表スライド（半）自動生成
 [Kaggle LLM Prompt Recovery](https://www.kaggle.com/competitions/llm-prompt-recovery/overview)における我々の[12th解法](https://www.kaggle.com/competitions/llm-prompt-recovery/discussion/494526)紹介スライドを作成する場面を例に.
 
+## Workflow Diagram
+
+```mermaid
+graph TD
+    A[01_prompts_kaggle_competition.md] -->|Claude3.5 sonnet| B[01_claude35sonnet_output.md]
+    C[02_prompts_solusion_summary.md] -->|Claude3.5 sonnet| D[02_claude35sonnet_solution_summary_output.md]
+    E[03_prompts_to_combine_markdowns.md]
+    B -->|Claude3.5 sonnet| F[03_claude35sonnet_merged_presentation_output.md]
+    D -->|Claude3.5 sonnet| F[03_claude35sonnet_merged_presentation_output.md]
+    E -->|Claude3.5 sonnet| F[03_claude35sonnet_merged_presentation_output.md]
+```
+
 ## Usage
 ### 1. **Claude3.5 sonnetへのプロンプトをテキストで用意**
 - ChatGPT4oも試したが，どちらもURLの内容読み込みが甘かったため, べた貼り. (要改善)
