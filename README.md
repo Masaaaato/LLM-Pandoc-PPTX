@@ -17,7 +17,7 @@ graph TD
         E
     end
     Prompt_w_Outputs -->|Claude3.5 sonnet| F[03_claude35sonnet_merged_presentation_output.md]
-    F -->|Pandoc| G["**<span style='color:red;'>kaggle_presentation_merged.pptx</span>**"]
+    F -->|Pandoc| G[<span style='color:red;'>kaggle_presentation_merged.pptx</span>]
 ```
 
 ## Usage
