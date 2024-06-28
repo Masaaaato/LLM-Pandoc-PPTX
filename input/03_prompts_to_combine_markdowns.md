@@ -1,4 +1,0 @@
-To create a presentation slide, please merge the following two Markdown files (claude35sonnet_output_en.md, claude35sonnet_solution_summary_output_en.md) and output a markdown file (.md). Please pay attention to the following points:
-- Appropriately modify the Agenda.
-- Appropriately modify the Conclusion.
-- Include the content of claude35sonnet_solution_summary_output_en.md after claude35sonnet_output_en.md.
