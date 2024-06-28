@@ -5,12 +5,11 @@
 
 ```mermaid
 graph TD
-    A[01_prompts_kaggle_competition.md] -->|Claude3.5 sonnet| B[01_claude35sonnet_output.md]
-    C[02_prompts_solusion_summary.md] -->|Claude3.5 sonnet| D[02_claude35sonnet_solution_summary_output.md]
-    E[03_prompts_to_combine_markdowns.md]
-    B -->|Claude3.5 sonnet| F[03_claude35sonnet_merged_presentation_output.md]
-    D -->|Claude3.5 sonnet| F[03_claude35sonnet_merged_presentation_output.md]
-    E -->|Claude3.5 sonnet| F[03_claude35sonnet_merged_presentation_output.md]
+    A[01_prompts_kaggle_competition.txt] -->|Claude3.5 sonnet| B[01_claude35sonnet_output.md]
+    C[02_prompts_solusion_summary.txt] -->|Claude3.5 sonnet| D[02_claude35sonnet_solution_summary_output.md]
+    E[03_prompts_to_combine_markdowns.txt] -->|Claude3.5 sonnet| F[03_claude35sonnet_merged_presentation_output.md]
+    B --> F
+    D --> F
 ```
 
 ## Usage
