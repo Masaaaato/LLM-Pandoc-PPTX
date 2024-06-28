@@ -1,5 +1,5 @@
 # LLM-->Pandocでの発表スライド（半）自動生成
-[Kaggle LLM Prompt Recovery](https://www.kaggle.com/competitions/llm-prompt-recovery/overview)における我々の[12th解法](https://www.kaggle.com/competitions/llm-prompt-recovery/discussion/494526)紹介スライドを作成する場面を例に.
+[Kaggle LLM Prompt Recovery](https://www.kaggle.com/competitions/llm-prompt-recovery/overview)における我々の [12th解法](https://www.kaggle.com/competitions/llm-prompt-recovery/discussion/494526) 紹介スライドを作成する場面を例に.
 
 ## Workflow Diagram
 
@@ -21,7 +21,7 @@ graph TD
         Outputs
     end
     Prompt_w_Outputs -->|Claude3.5 sonnet| F[03_claude35sonnet_merged_presentation_output.md]
-    F -->|Pandoc| G[<span style='color:red;'>kaggle_presentation_merged.pptx</span>]
+    F -->|Pandoc| G[<span style='color:orange;'>kaggle_presentation_merged.pptx</span>]
 ```
 
 ## Usage
