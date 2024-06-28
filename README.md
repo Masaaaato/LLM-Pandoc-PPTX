@@ -31,20 +31,24 @@ graph TD
 - `01_prompts_kaggle_competition.txt`
 
 ### 2. Claude3.5 sonnetから出力`.md`を取得
-- `01_prompts_kaggle_competition.txt`　をClaude3.5 sonnetへドラッグ&ドロップ
+- `01_prompts_kaggle_competition.txt`　をClaude3.5 sonnetへドラッグ&ドロップ.
 - 最初は英語の出力なので, "同じ内容を日本語で出力してください"と指示.
-- 今回はなぜか途中で切れたりしたため, 手作業でコピペ (要改善)
+- 今回はなぜか途中で切れたりしたため, 手作業でコピペ. (要改善)
+  ![image](https://github.com/Masaaaato/LLM-Pandoc-PPTX/assets/93956588/e00f55f0-4e4e-48b4-8338-12a0d0de47f2)
 - `output/01_claude35sonnet_output_ja.md`
 
 ### 3. (Optional)スライドテンプレートを用意
 - [ここ](https://yyhhyy.hatenablog.com/entry/2019/10/22/100000)を参考にした.
 - `output/template.pptx`
-- 今回は特にこだわりはない
+- 今回は特にこだわりはない.
     - スライドマスターにて設定.
     - 比16:9, 日本語メイリオ, 英語Arial, スライド番号挿入くらい.
     - コーポレートカラーやデザインがあれば.
-- Markdownレベル1は以下について，予めフォントサイズを指定しておくと便利 (フォントサイズ48) 
-- Markdownレベル2は以下について，予めフォントサイズを指定しておくと便利 (タイトル36, 第2レベル18, 行間オプション倍率1.1にした.)
+- Markdownレベル1は以下について，予めフォントサイズを指定しておくと便利. (フォントサイズ48)
+  ![image-2](https://github.com/Masaaaato/LLM-Pandoc-PPTX/assets/93956588/b9271cb9-5773-4f98-ac90-3139f869120a)
+- Markdownレベル2は以下について，予めフォントサイズを指定しておくと便利. (タイトル36, 第2レベル18, 行間オプション倍率1.1にした.)
+  ![image-1](https://github.com/Masaaaato/LLM-Pandoc-PPTX/assets/93956588/1d736727-f4b0-4e78-a7cb-2817f9594e49)
+
 
 ### 4. Pandoc
 - install (私の環境: WSL2 Ubuntu 22.04.3 LTS)
@@ -62,7 +66,7 @@ pandoc -s 01_claude35sonnet_output_ja.md -o kaggle_presentation.pptx --reference
 - 1-5位までの解法をべた貼りした`02_prompts_solusion_summar.txt`を用いて`02_claude35sonnet_solution_summary_output_ja.md`を取得.
 - `03_prompts_to_combine_markdowns.txt`の内容をClaude3.5 sonnetに入力の上, `01_claude35sonnet_output_ja.md`と`02_claude35sonnet_solution_summary_output_ja.md`を添付.
 - `output/03_claude35sonnet_merged_presentation_output_ja.md`を得る.
-- (それぞれの解法を###セクションで区切ると1スライドに乗ってしまうので, 適宜マニュアルで##セクション追加) (要改善)
+- (それぞれの解法を###セクションで区切ると1スライドに乗ってしまうので, 適宜マニュアルで##セクション追加.) (要改善)
 - 同様にPPTX生成.
 ```bash
 cd output
