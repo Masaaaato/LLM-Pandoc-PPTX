@@ -5,10 +5,10 @@
 
 ```mermaid
 graph TD
-    H[<span style='color:blue;'>Overview and Our solution</span>] --> A[01_prompts_kaggle_competition.txt]
+    H[<span style='color:orange;'>Overview and Our solution</span>] --> A[01_prompts_kaggle_competition.txt]
     A -->|Claude3.5 sonnet| B[01_claude35sonnet_output.md]
 
-    I[<span style='color:blue;'>Top Solutions #1-5</span>] --> C[02_prompts_solusion_summary.txt]
+    I[<span style='color:orange;'>Top Solutions #1-5</span>] --> C[02_prompts_solusion_summary.txt]
     
     C -->|Claude3.5 sonnet| D[02_claude35sonnet_solution_summary_output.md]
     E[03_prompts_to_combine_markdowns.txt]
@@ -17,8 +17,8 @@ graph TD
         D
     end
     subgraph Prompt_w_Outputs
-        Outputs
         E
+        Outputs
     end
     Prompt_w_Outputs -->|Claude3.5 sonnet| F[03_claude35sonnet_merged_presentation_output.md]
     F -->|Pandoc| G[<span style='color:red;'>kaggle_presentation_merged.pptx</span>]
