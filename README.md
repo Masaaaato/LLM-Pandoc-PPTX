@@ -33,8 +33,8 @@ graph TD
 ### 2. Claude3.5 sonnetから出力`.md`を取得
 - `01_prompts_kaggle_competition.txt`　をClaude3.5 sonnetへドラッグ&ドロップ.
 - 最初は英語の出力なので, "同じ内容を日本語で出力してください"と指示.
-- 今回はなぜか途中で切れたりしたため, 手作業でコピペ. (要改善)
-  ![image](https://github.com/Masaaaato/LLM-Pandoc-PPTX/assets/93956588/e00f55f0-4e4e-48b4-8338-12a0d0de47f2)
+- 今回はなぜか途中で切れたりしたため, 手作業でコピペ. (要改善)  
+  <img src="https://github.com/Masaaaato/LLM-Pandoc-PPTX/assets/93956588/e00f55f0-4e4e-48b4-8338-12a0d0de47f2" width="540">
 - `output/01_claude35sonnet_output_ja.md`
 
 ### 3. (Optional)スライドテンプレートを用意
@@ -44,9 +44,9 @@ graph TD
     - スライドマスターにて設定.
     - 比16:9, 日本語メイリオ, 英語Arial, スライド番号挿入くらい.
     - コーポレートカラーやデザインがあれば.
-- Markdownレベル1は以下について，予めフォントサイズを指定しておくと便利. (フォントサイズ48)
+- Markdownレベル1は以下について，予めフォントサイズを指定しておくと便利. (フォントサイズ48)  
   <img src="https://github.com/Masaaaato/LLM-Pandoc-PPTX/assets/93956588/b9271cb9-5773-4f98-ac90-3139f869120a" width="320">
-- Markdownレベル2は以下について，予めフォントサイズを指定しておくと便利. (タイトル36, 第2レベル18, 行間オプション倍率1.1にした.)
+- Markdownレベル2は以下について，予めフォントサイズを指定しておくと便利. (タイトル36, 第2レベル18, 行間オプション倍率1.1にした.)  
   <img src="https://github.com/Masaaaato/LLM-Pandoc-PPTX/assets/93956588/1d736727-f4b0-4e78-a7cb-2817f9594e49" width="320">
 
 
