@@ -45,9 +45,9 @@ graph TD
     - 比16:9, 日本語メイリオ, 英語Arial, スライド番号挿入くらい.
     - コーポレートカラーやデザインがあれば.
 - Markdownレベル1は以下について，予めフォントサイズを指定しておくと便利. (フォントサイズ48)
-  ![image-2](https://github.com/Masaaaato/LLM-Pandoc-PPTX/assets/93956588/b9271cb9-5773-4f98-ac90-3139f869120a)
+  <img src="https://github.com/Masaaaato/LLM-Pandoc-PPTX/assets/93956588/b9271cb9-5773-4f98-ac90-3139f869120a" width="320">
 - Markdownレベル2は以下について，予めフォントサイズを指定しておくと便利. (タイトル36, 第2レベル18, 行間オプション倍率1.1にした.)
-  ![image-1](https://github.com/Masaaaato/LLM-Pandoc-PPTX/assets/93956588/1d736727-f4b0-4e78-a7cb-2817f9594e49)
+  <img src="https://github.com/Masaaaato/LLM-Pandoc-PPTX/assets/93956588/1d736727-f4b0-4e78-a7cb-2817f9594e49" width="320">
 
 
 ### 4. Pandoc
