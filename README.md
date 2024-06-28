@@ -5,8 +5,14 @@
 
 ```mermaid
 graph TD
-    A[01_prompts_kaggle_competition.txt] -->|Claude3.5 sonnet| B[01_claude35sonnet_output.md]
-    C[02_prompts_solusion_summary.txt] -->|Claude3.5 sonnet| D[02_claude35sonnet_solution_summary_output.md]
+    linkStyle default fill:#0000FF,stroke:#0000FF,color:#0000FF;
+    H["[Overview](https://www.kaggle.com/competitions/llm-prompt-recovery) and [Our solution](https://www.kaggle.com/competitions/llm-prompt-recovery/discussion/494526)"] --> A[01_prompts_kaggle_competition.txt]
+    A -->|Claude3.5 sonnet| B[01_claude35sonnet_output.md]
+
+    linkStyle default fill:#0000FF,stroke:#0000FF,color:#0000FF;
+    H["[Top Solutions (1-5)](https://www.kaggle.com/competitions/llm-prompt-recovery/discussion?sort=undefined)"] --> C[02_prompts_solusion_summary.txt]
+    
+    C -->|Claude3.5 sonnet| D[02_claude35sonnet_solution_summary_output.md]
     E[03_prompts_to_combine_markdowns.txt]
     subgraph Outputs
         B
